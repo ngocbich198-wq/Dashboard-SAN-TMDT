@@ -1,0 +1,6 @@
+{
+  "name": "Báo Cáo Đơn Gửi",
+  "description": "Ứng dụng quản lý và báo cáo đơn gửi với chức năng nhập liệu đơn lẻ, tải file, phân tích Top khách hàng và cảnh báo bất thường.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
