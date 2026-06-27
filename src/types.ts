@@ -39,10 +39,20 @@ export interface AnomalyWarning {
 
 export interface UserConfig {
   id: string;
+  username: string;
+  password?: string;
   name: string;
   roleName: string; // e.g. "Admin", "Manager", "Nhân viên"
   canViewDashboard: boolean;
   canInputData: boolean;
   isSystem?: boolean; // Cannot delete
+}
+
+export interface HistoryLog {
+  id: string;
+  timestamp: string; // YYYY-MM-DD HH:mm:ss
+  userWhoChanged: string; // Name of modifier
+  actionType: 'create' | 'update' | 'delete' | 'login' | 'logout';
+  details: string; // Describe change details
 }
 
